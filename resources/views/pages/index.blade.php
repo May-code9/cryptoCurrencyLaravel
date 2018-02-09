@@ -42,22 +42,21 @@ Home
                               <div id="layerslider_1" class="ls-wp-container fitvidsignore" style="width:1280px;height:100vh;margin:0 auto;margin-bottom: 0px;">
                                 <div class="ls-slide" data-ls="bgsize:cover;duration:4500;kenburnszoom:in;kenburnsscale:1;parallaxtype:3d;parallaxevent:scroll;parallaxaxis:y;">
                                   <img src="images/01.jpeg" class="ls-bg" alt="Slide background" />
-                                  <p style="top:86px;left:15px;text-align:left;font-weight:700;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:90px;color:#ffffff;" class="ls-l" data-ls="texttransitionin:true;texttypein:chars_asc;">Best Bitcoin</p>
+                                  <p style="top:86px;left:15px;text-align:left;font-weight:700;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:90px;color:#ffffff;" class="ls-l" data-ls="texttransitionin:true;texttypein:chars_asc;">Best CryptoCurrency</p>
                                   <p style="top:214px;left:16px;text-align:left;font-weight:700;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:90px;color:#ffffff;" class="ls-l" data-ls="delayin:300;texttransitionin:true;texttypein:chars_asc;">Solution for business.</p>
-                                  <p style="top:340px;left:18px;text-align:left;font-weight:400;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:45px;color:#ffb426;" class="ls-l" data-ls="delayin:600;">Bitcoin on mobiles allows you to pay with two <br>
-                                    step scan-and-pay. No need to sign up.</p>
-                                    <a style="" class="ls-l" href="#next" target="_self" data-ls="delayin:800;hover:true;hoverbgcolor:#fff;hovercolor:#252525;">
+                                  <p style="top:340px;left:18px;text-align:left;font-weight:400;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:45px;color:#ffb426;" class="ls-l" data-ls="delayin:600;">Making investment in digital currencies  <br>
+                                    simple and profitable.</p>
+                                    <a style="" class="ls-l" href="{{ route('register') }}" target="_self" data-ls="delayin:800;hover:true;hoverbgcolor:#fff;hovercolor:#252525;">
                                       <p style="top:491px;left:19px;text-align:center;font-weight:600;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Open Sans;font-size:16px;color:#ffffff;padding-top:15px;padding-right:40px;padding-bottom:15px;padding-left:40px;border-radius:50px;background:#ffb426;" class=" btn-yellow">GET STARTED</p>
                                     </a>
                                   </div>
                                   <div class="ls-slide" data-ls="bgsize:cover;duration:3200;kenburnszoom:in;kenburnsscale:1;parallaxtype:3d;parallaxevent:scroll;parallaxaxis:y;">
                                     <img src="images/02.jpg" class="ls-bg" alt="Slide background" />
-                                    <p style="top:89px;left:494px;text-align:left;font-weight:700;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:90px;color:#ffffff;" class="ls-l" data-ls="texttransitionin:true;texttypein:chars_asc;">Cryptocurrency </p>
-                                    <p style="top:200px;left:223px;text-align:left;font-weight:700;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:90px;color:#ffffff;" class="ls-l" data-ls="delayin:350;texttransitionin:true;texttypein:chars_asc;">Top Joomla Template</p>
-                                    <p style="top:344px;left:150px;text-align:right;font-weight:400;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:45px;color:#ffb426;" class="ls-l" data-ls="delayin:550;">With Bitcoin, there is no credit card number<br> that some
-                                      malicious actor can collect in order to.</p>
-                                      <a style="" class="ls-l" href="#next" target="_self" data-ls="delayin:850;hover:true;hoverbgcolor:#fff;hovercolor:#252525;">
-                                        <p style="top:487px;left:1053px;text-align:center;font-weight:600;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Open Sans;font-size:16px;color:#ffffff;padding-top:15px;padding-right:40px;padding-bottom:15px;padding-left:40px;border-radius:50px;background:#ffb426;" class=" btn-yellow">SIGN IN NOW</p>
+                                    <p style="top:89px;left:480px;text-align:left;font-weight:700;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:80px;color:#ffffff;" class="ls-l" data-ls="texttransitionin:true;texttypein:chars_asc;">With Professional</p>
+                                    <p style="top:200px;left:170px;text-align:left;font-weight:700;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:70px;color:#ffffff;" class="ls-l" data-ls="delayin:350;texttransitionin:true;texttypein:chars_asc;">Research &amp; Chart Analysis</p>
+                                    <p style="top:344px;left:150px;text-align:right;font-weight:400;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Montserrat;font-size:45px;color:#ffb426;" class="ls-l" data-ls="delayin:550;">we execute the trades, and we report the returns to you<br> With essentially no effort from you</p>
+                                      <a style="" class="ls-l" href="{{ route('register') }}" target="_self" data-ls="delayin:850;hover:true;hoverbgcolor:#fff;hovercolor:#252525;">
+                                        <p style="top:487px;left:1053px;text-align:center;font-weight:600;font-style:normal;text-decoration:none;wordwrap:false;opacity:1;mix-blend-mode:normal;font-family:Open Sans;font-size:16px;color:#ffffff;padding-top:15px;padding-right:40px;padding-bottom:15px;padding-left:40px;border-radius:50px;background:#ffb426;" class=" btn-yellow">SIGN UP NOW</p>
                                       </a>
                                     </div>
                                   </div>
@@ -79,7 +78,7 @@ Home
                             <div id="sppb-addon-1515778166893" class="clearfix" >
                               <div class="sppb-addon sppb-addon-text-block 0 sppb-text-center content_border">
                                 <h3 class="sppb-addon-title">Get Started Today</h3>
-                                <div class="sppb-addon-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing <br />erat eget risus sollicitudin pellentesque et non erat.</div>
+                                <div class="sppb-addon-content">It's easy, Just carefully follow the steps below<br />and you'll be on your way to making sound investment</div>
                               </div>
                             </div>
                             <div id="section-id-1515778166894" class="sppb-section "  >

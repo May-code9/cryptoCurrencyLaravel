@@ -14,7 +14,7 @@
       <div id="sp-top2" class="col-sm-6 col-md-6">
         <div class="sp-column ">
           <ul class="sp-contact-info">
-            <li class="sp-contact-phone"><i class="fa fa-phone"></i> <a href="tel:+1(234)567-890">+1 (234) 567-890</a></li>
+            <li class="sp-contact-phone"><i class="fa fa-phone"></i> <a href="tel:+1(234)567-890">Phone Number</a></li>
             <li class="sp-contact-email"><i class="fa fa-envelope"></i> <a href="mailto:contact@yourmail.com">contact@yourmail.com</a></li>
             <li class="sp-contact-time"><i class="fa fa-clock-o"></i>Mon - Fri: 8:00 - 17:30</li>
           </ul>
@@ -30,8 +30,8 @@
         <div class="sp-column ">
           <div class="logo">
             <a href="/">
-              <img class="sp-default-logo hidden-xs" src="images/logo.png" alt="Bitcoin - Mining and Cryptocurrency Joomla Template">
-              <img class="sp-default-logo visible-xs" src="images/logo.png" alt="Bitcoin - Mining and Cryptocurrency Joomla Template">
+              <img class="sp-default-logo hidden-xs" src="images/logo1.png" title="{{ config('app.name') }}" alt="{{ config('app.name') }}">
+              <img class="sp-default-logo visible-xs" src="images/logo1.png" title="{{ config('app.name') }}" alt="{{ config('app.name') }}">
             </a>
           </div>
         </div>
