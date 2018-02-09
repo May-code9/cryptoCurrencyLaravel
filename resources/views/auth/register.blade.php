@@ -1,77 +1,118 @@
-@extends('layouts.app')
-
+@extends('master')
+@section('title')
+Register
+@endsection
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card card-default">
-                <div class="card-header">Register</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Register
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+<section id="sp-page-title">
+  <div class="row">
+    <div id="sp-title" class="col-sm-12 col-md-12">
+      <div class="sp-column ">
+        <div class="sp-page-title"style="background-color: #f7f7f7;">
+          <div class="container"><h2>Create your account</h2><h3>Registration Form</h3>
+            <div class="sp-module ">
+              <div class="sp-module-content">
+                <ol class="breadcrumb">
+                  <li><i class="fa fa-home"></i></li>
+                  <li><a href="{{ route('crypto_home') }}" class="pathway">Home</a></li>
+                  <li class="active">Register</li>
+                </ol>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>
+<section id="sp-breadc">
+  <div class="container">
+    <div class="row">
+      <div id="sp-breadcrumb" class="col-sm-12 col-md-12">
+        <div class="sp-column ">
+          <div class="sp-module ">
+            <div class="sp-module-content">
+              <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i></li>
+                <li><a href="{{ route('crypto_home') }}" class="pathway">Home</a></li>
+                <li class="active">Register</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sp-main-body">
+  <div class="container">
+    <div class="row">
+      <div id="sp-component" class="col-sm-12 col-md-12">
+        <div class="sp-column ">
+          <div id="system-message-container">
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 text-center loginnew">
+              <div class="login">
+                <form method="POST" action="{{ route('register') }}">
+                  @csrf
+                  <div class="form-group">
+                    <div class="group-control">
+                      <input type="text" name="first_name" id="first_name" class="{{ $errors->has('first_name') ? ' is-invalid' : '' }}" value="{{ old('first_name') }}" placeholder="First Name" required autofocus/>
+                      @if ($errors->has('first_name'))
+                      <span class="invalid-feedback">
+                        <strong>{{ $errors->first('first_name') }}</strong>
+                      </span>
+                      @endif
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="group-control">
+                      <input type="text" name="last_name" id="last_name" class="{{ $errors->has('last_name') ? ' is-invalid' : '' }}" value="{{ old('last_name') }}" placeholder="Last Name" required autofocus/>
+                      @if ($errors->has('last_name'))
+                      <span class="invalid-feedback">
+                        <strong>{{ $errors->first('last_namelast_name') }}</strong>
+                      </span>
+                      @endif
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="group-control">
+                      <input type="email" name="email" id="email" class="{{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ old('email') }}" placeholder="Email" required autofocus/>
+                      @if ($errors->has('email'))
+                      <span class="invalid-feedback">
+                        <strong>{{ $errors->first('email') }}</strong>
+                      </span>
+                      @endif
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="group-control">
+                      <input type="password" name="password" id="password" placeholder="Password" class="{{ $errors->has('password') ? ' is-invalid' : '' }}" required/>
+                      @if ($errors->has('password'))
+                      <span class="invalid-feedback">
+                        <strong>{{ $errors->first('password') }}</strong>
+                      </span>
+                      @endif
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="group-control">
+                      <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">
+                      Register
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 @endsection

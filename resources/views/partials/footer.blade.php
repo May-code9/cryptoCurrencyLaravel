@@ -1,109 +1,3 @@
-@extends('master')
-@section('title')
-Login
-@endsection
-@section('content')
-<section id="sp-page-title">
-  <div class="row">
-    <div id="sp-title" class="col-sm-12 col-md-12">
-      <div class="sp-column ">
-        <div class="sp-page-title"style="background-color: #f7f7f7;">
-          <div class="container"><h2>Login your account</h2><h3>Login Form</h3>
-            <div class="sp-module ">
-              <div class="sp-module-content">
-                <ol class="breadcrumb">
-                  <li><i class="fa fa-home"></i></li>
-                  <li><a href="{{ route('crypto_home') }}" class="pathway">Home</a></li>
-                  <li class="active">Login</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="sp-breadc">
-  <div class="container">
-    <div class="row">
-      <div id="sp-breadcrumb" class="col-sm-12 col-md-12">
-        <div class="sp-column ">
-          <div class="sp-module ">
-            <div class="sp-module-content">
-              <ol class="breadcrumb">
-                <li><i class="fa fa-home"></i></li>
-                <li><a href="{{ route('crypto_home') }}" class="pathway">Home</a></li>
-                <li class="active">Login</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="sp-main-body">
-  <div class="container">
-    <div class="row">
-      <div id="sp-component" class="col-sm-12 col-md-12">
-        <div class="sp-column ">
-          <div id="system-message-container">
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 text-center loginnew">
-              <div class="login">
-                <form method="POST" action="{{ route('login') }}">
-                  @csrf
-                  <div class="form-group">
-                    <div class="group-control">
-                      <input type="email" name="email" id="email" class="{{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ old('email') }}" placeholder="Email" required autofocus/>
-                      @if ($errors->has('email'))
-                      <span class="invalid-feedback">
-                        <strong>{{ $errors->first('email') }}</strong>
-                      </span>
-                      @endif
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="group-control">
-                      <input type="password" name="password" id="password" placeholder="Password" class="{{ $errors->has('password') ? ' is-invalid' : '' }}" required/>
-                      @if ($errors->has('password'))
-                      <span class="invalid-feedback">
-                        <strong>{{ $errors->first('password') }}</strong>
-                      </span>
-                      @endif
-                    </div>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input id="remember" type="checkbox" name="remember" class="inputbox" value="yes">
-                      Remember me
-                    </label>
-                  </div>
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">
-                      Log in
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div class="form-links">
-                <ul>
-                  <li>
-                    <a href="#">
-                      Forgot your password?
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <section id="sp-bottom">
   <div class="container">
     <div class="row">
@@ -264,4 +158,15 @@ Login
     </div>
   </div>
 </section>
-@endsection
+
+<footer id="sp-footer">
+  <div class="container">
+    <div class="row">
+      <div id="sp-footer1" class="col-sm-12 col-md-12">
+        <div class="sp-column "><span class="sp-copyright">© 2018</span></div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div> <!-- /.body-innerwrapper -->
+</div> <!-- /.body-innerwrapper -->

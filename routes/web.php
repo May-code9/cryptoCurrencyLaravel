@@ -18,4 +18,4 @@ Route::get('/Services', ['as'=>'crypto_services', 'uses'=>'CryptoController@serv
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
