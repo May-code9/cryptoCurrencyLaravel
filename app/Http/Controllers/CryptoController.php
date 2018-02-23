@@ -7,15 +7,19 @@ use Illuminate\Http\Request;
 class CryptoController extends Controller
 {
     public function index() {
-      return view('pages.index');
+      $index = "active";
+      return view('pages.index', compact('index'));
     }
     public function about() {
-      return view('pages.about-us');
+      $about = "active";
+      return view('pages.about-us', compact('about'));
     }
     public function contact() {
-      return view('pages.contact');
+      $contact = "active";
+      return view('pages.contact', compact('contact'));
     }
     public function services() {
-      return view('pages.services');
+      $services = "active";
+      return view('pages.services', compact('services'));
     }
 }

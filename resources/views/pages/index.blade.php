@@ -84,53 +84,53 @@ Home
                             <div id="section-id-1515778166894" class="sppb-section "  >
                               <div class="sppb-container-inner">
                                 <div class="sppb-row">
-                                  <div class="sppb-col-md-4">
+                                  <div class="sppb-col-md-4 zoom">
                                     <div id="column-id-1515778166895" class="sppb-column" >
                                       <div class="sppb-column-addons">
                                         <div id="sppb-addon-1515778166936" class="clearfix" >
                                           <div class="sppb-addon sppb-addon-single-image sppb-text-center ">
                                             <div class="sppb-addon-content">
                                               <div class="sppb-addon-single-image-container">
-                                                <img class="sppb-img-responsive" src="images/bitcoin01.jpg" alt="Image" title="">
+                                                <img class="sppb-img-responsive" src="images/register.jpg" alt="Image" title="">
                                               </div>
                                             </div>
                                           </div>
                                         </div>
                                         <div id="sppb-addon-1515778166941" class="clearfix" >
                                           <div class="sppb-addon sppb-addon-text-block 0 sppb-text-center bit01">
-                                            <h3 class="sppb-addon-title">Bitcoin Transaction</h3>
+                                            <h3 class="sppb-addon-title">Click Register</h3>
                                             <div class="sppb-addon-content">
-                                              <div class="sppb-addon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</div>
+                                              <div class="sppb-addon-text">If you already have an account with {{ config('app.name') }}, then login with your email and password. </div>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="sppb-col-md-4">
+                                  <div class="sppb-col-md-4 zoom">
                                     <div id="column-id-1515778166898" class="sppb-column" >
                                       <div class="sppb-column-addons">
                                         <div id="sppb-addon-1515778166951" class="clearfix" >
                                           <div class="sppb-addon sppb-addon-single-image sppb-text-center ">
                                             <div class="sppb-addon-content">
                                               <div class="sppb-addon-single-image-container">
-                                                <img class="sppb-img-responsive" src="images/bitcoin02.jpg" alt="Image" title="">
+                                                <img class="sppb-img-responsive" src="images/onRegister.jpg" alt="Image" title="">
                                               </div>
                                             </div>
                                           </div>
                                         </div>
                                         <div id="sppb-addon-1515778166946" class="clearfix" >
                                           <div class="sppb-addon sppb-addon-text-block 0 sppb-text-center bit01">
-                                            <h3 class="sppb-addon-title">Bitcoin Investment</h3>
+                                            <h3 class="sppb-addon-title">Complete Form</h3>
                                             <div class="sppb-addon-content">
-                                              <div class="sppb-addon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</div>
+                                              <div class="sppb-addon-text">Ensure all details are accurate before submitting. Should there be any error in details, click <strong>edit</strong> on the dropdown of your Username </div>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="sppb-col-md-4">
+                                  <div class="sppb-col-md-4 zoom">
                                     <div id="column-id-1515778166899" class="sppb-column" >
                                       <div class="sppb-column-addons">
                                         <div id="sppb-addon-1515778166931" class="clearfix" >
@@ -176,7 +176,7 @@ Home
                             <div id="sppb-addon-1515846769754" class="clearfix" >
                               <div class="sppb-addon sppb-addon-text-block 0 sppb-text-center content_border">
                                 <h3 class="sppb-addon-title">Bitcoin Market Data</h3>
-                                <div class="sppb-addon-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing <br />erat eget risus sollicitudin pellentesque et non erat.</div>
+                                <div class="sppb-addon-content">This is a live feed of Bitcoin. We have well trained personels that use this chart amongst many other tools to make Analysis.</div>
                               </div>
                             </div>
                             <div id="sppb-addon-1515846769759" class="clearfix" >
@@ -220,8 +220,8 @@ Home
                           <div class="sppb-column-addons">
                             <div id="sppb-addon-1515846769764" class="clearfix" >
                               <div class="sppb-addon sppb-addon-text-block 0 sppb-text-center content_border">
-                                <h3 class="sppb-addon-title">Why Bitcoin ?</h3>
-                                <div class="sppb-addon-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing <br />erat eget risus sollicitudin pellentesque et non erat.</div>
+                                <h3 class="sppb-addon-title">Why {{ config('app.name') }} ?</h3>
+                                <div class="sppb-addon-content">Here at {{ config('app.name') }}, We have a good reputation we intend to keep</div>
                               </div>
                             </div>
                             <div id="section-id-1515846769765" class="sppb-section "  >
@@ -236,8 +236,8 @@ Home
                                               <div class="sppb-icon">
                                                 <span class="sppb-icon-container"><i class="fa fa-bitcoin"></i></span>
                                               </div>
-                                              <h3 class="sppb-addon-title sppb-feature-box-title">Safe & Secure</h3>
-                                              <div class="sppb-addon-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr diam nonumy eirmod tempor invidunt ut labore edolore.</div>
+                                              <h3 class="sppb-addon-title sppb-feature-box-title">Simple and Profitable</h3>
+                                              <div class="sppb-addon-text just">{{ config('app.name') }} makes investment in digital currencies simple and profitable for you. Once you invest, there is essentially no work you need to do.</div>
                                             </div>
                                           </div>
                                         </div>
@@ -256,8 +256,8 @@ Home
                                               <div class="sppb-icon">
                                                 <span class="sppb-icon-container"><i class="fa fa-history"></i></span>
                                               </div>
-                                              <h3 class="sppb-addon-title sppb-feature-box-title">Instant Exchange</h3>
-                                              <div class="sppb-addon-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr diam nonumy eirmod tempor invidunt ut labore edolore.</div>
+                                              <h3 class="sppb-addon-title sppb-feature-box-title">Security Garanteed</h3>
+                                              <div class="sppb-addon-text">We use the same technology standards of ethics, integrity, and professionalism.</div>
                                             </div>
                                           </div>
                                         </div>
@@ -277,7 +277,7 @@ Home
                                                 <span class="sppb-icon-container"><i class="fa fa-gg"></i></span>
                                               </div>
                                               <h3 class="sppb-addon-title sppb-feature-box-title">Investment Planning</h3>
-                                              <div class="sppb-addon-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr diam nonumy eirmod tempor invidunt ut labore edolore.</div>
+                                              <div class="sppb-addon-text">{{ config('app.name') }} makes investment in digital currencies simple and profitable for you. Once you invest, there is essentially no work you need to do.</div>
                                             </div>
                                           </div>
                                         </div>
@@ -304,7 +304,7 @@ Home
                           <div class="sppb-column-addons">
                             <div id="sppb-addon-1515846769883" class="clearfix" >
                               <div class="sppb-addon sppb-addon-text-block 0 sppb-text-center content_border">
-                                <h3 class="sppb-addon-title">Our Bitcoin Services</h3>
+                                <h3 class="sppb-addon-title">Our CryptoCurrency Services</h3>
                                 <div class="sppb-addon-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer adipiscing <br />erat eget risus sollicitudin pellentesque et non erat.</div>
                               </div>
                             </div>
@@ -428,7 +428,7 @@ Home
                       </div>
                     </div>
                   </section>
-                  <section id="section-id-1515846770045" class="sppb-section "   data-sppb-parallax="on">
+                  <!-- <section id="section-id-1515846770045" class="sppb-section "   data-sppb-parallax="on">
                     <div class="sppb-row-overlay"></div>
                     <div class="sppb-row-container">
                       <div class="sppb-row">
@@ -722,7 +722,7 @@ Home
                         </div>
                       </div>
                     </section>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>

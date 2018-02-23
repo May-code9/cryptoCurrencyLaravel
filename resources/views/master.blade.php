@@ -21,6 +21,7 @@
   @elseif(Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register')
   @include('partials.links.login')
   @endif
+  <link rel="stylesheet" href="{{asset('css/may.css')}}" type="text/css">
 </head>
 @if(Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register')
 <body class="site com-users view-login no-layout no-task itemid-109 en-gb ltr  sticky-header layout-fluid off-canvas-menu-init">

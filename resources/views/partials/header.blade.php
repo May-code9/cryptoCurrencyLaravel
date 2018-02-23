@@ -41,9 +41,9 @@
           <div class='sp-megamenu-wrapper'>
             <a id="offcanvas-toggler" class="visible-sm visible-xs" aria-label="Menu" href="#"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a>
             <ul class="sp-megamenu-parent menu-drop-in hidden-sm hidden-xs">
-              <li class="sp-menu-item current-item active"><a  href="{{ route('crypto_home') }}" >Home</a></li>
-              <li class="sp-menu-item"><a  href="{{ route('crypto_about') }}" >About Us</a></li>
-              <li class="sp-menu-item"><a  href="{{ route('crypto_services') }}" >Services</a></li>
+              <li class="sp-menu-item current-item @if(isset($index)) {{ $index }} @endif"><a  href="{{ route('crypto_home') }}" >Home</a></li>
+              <li class="sp-menu-item @if(isset($about)) {{ $about }} @endif"><a  href="{{ route('crypto_about') }}" >About Us</a></li>
+              <li class="sp-menu-item @if(isset($services)) {{ $services }} @endif"><a  href="{{ route('crypto_services') }}" >Services</a></li>
               <!-- <li class="sp-menu-item sp-has-child">
                 <a  href="/index.php/pages" >Pages</a>
                 <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
@@ -69,9 +69,25 @@
                   </div>
                 </div>
               </li> -->
-              <li class="sp-menu-item"><a  href="{{ route('crypto_contact') }}" >Contact</a></li>
-              <li class="sp-menu-item"><a  href="{{ route('login') }}" >Login</a></li>
-              <li class="sp-menu-item"><a  href="{{ route('register') }}" >Register</a></li>
+              <li class="sp-menu-item @if(isset($contact)) {{ $contact}} @endif"><a  href="{{ route('crypto_contact') }}" >Contact</a></li>
+              @guest
+              <li class="sp-menu-item @if(isset($login_active)) {{ $login_active }} @endif"><a  href="{{ route('login') }}" >Login</a></li>
+              <li class="sp-menu-item @if(isset($register_active)) {{ $register_active }} @endif"><a  href="{{ route('register') }}" >Register</a></li>
+              @else
+              <li class="sp-menu-item sp-has-child"><a  href="#" >{{ Auth::user()->first_name }}</a>
+                <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
+                  <div class="sp-dropdown-inner">
+                    <ul class="sp-dropdown-items">
+                      <li class="sp-menu-item"><a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                        <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">
+                          {{ csrf_field() }}
+                        </form>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              @endguest
             </ul>
           </div>
         </div>

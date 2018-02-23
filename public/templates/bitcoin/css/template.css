@@ -1742,7 +1742,7 @@ a {
   transition: color 400ms, background-color 400ms;
 }
 body {
-  line-height: 24px;
+  line-height: 19px;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
   background-color: #ffffff;

@@ -57,7 +57,7 @@ Register
                   @csrf
                   <div class="form-group">
                     <div class="group-control">
-                      <input type="text" name="first_name" id="first_name" class="{{ $errors->has('first_name') ? ' is-invalid' : '' }}" value="{{ old('first_name') }}" placeholder="First Name" required autofocus/>
+                      <input type="text" name="first_name" id="first_name" class="{{ $errors->has('first_name') ? ' is-invalid' : '' }}" value="{{ old('first_name') }}" placeholder="First Name" required />
                       @if ($errors->has('first_name'))
                       <span class="invalid-feedback">
                         <strong>{{ $errors->first('first_name') }}</strong>
@@ -67,17 +67,27 @@ Register
                   </div>
                   <div class="form-group">
                     <div class="group-control">
-                      <input type="text" name="last_name" id="last_name" class="{{ $errors->has('last_name') ? ' is-invalid' : '' }}" value="{{ old('last_name') }}" placeholder="Last Name" required autofocus/>
+                      <input type="text" name="last_name" id="last_name" class="{{ $errors->has('last_name') ? ' is-invalid' : '' }}" value="{{ old('last_name') }}" placeholder="Last Name" required/>
                       @if ($errors->has('last_name'))
                       <span class="invalid-feedback">
-                        <strong>{{ $errors->first('last_namelast_name') }}</strong>
+                        <strong>{{ $errors->first('last_name') }}</strong>
                       </span>
                       @endif
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="group-control">
-                      <input type="email" name="email" id="email" class="{{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ old('email') }}" placeholder="Email" required autofocus/>
+                      <input type="text" name="phone_number" id="phone_number" class="{{ $errors->has('phone_number') ? ' is-invalid' : '' }}" value="{{ old('phone_number') }}" placeholder="Phone Number" required />
+                      @if ($errors->has('phone_number'))
+                      <span class="invalid-feedback">
+                        <strong>{{ $errors->first('phone_number') }}</strong>
+                      </span>
+                      @endif
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="group-control">
+                      <input type="email" name="email" id="email" class="{{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ old('email') }}" placeholder="Email" required/>
                       @if ($errors->has('email'))
                       <span class="invalid-feedback">
                         <strong>{{ $errors->first('email') }}</strong>

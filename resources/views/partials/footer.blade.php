@@ -18,10 +18,9 @@
                                 <div class="sppb-addon sppb-addon-text-block 0  ">
                                   <div class="sppb-addon-content">
                                     <ul>
-                                      <li><a href="#">About Us</a></li>
-                                      <li><a href="#">Services</a></li>
-                                      <li><a href="#">Pages</a></li>
-                                      <li><a href="#">Shop</a></li>
+                                      <li><a href="{{ route('crypto_home') }}">Home</a></li>
+                                      <li><a href="{{ route('crypto_about') }}">About Us</a></li>
+                                      <li><a href="{{ route('crypto_services') }}">Services</a></li>
                                     </ul>
                                   </div>
                                 </div>
@@ -35,10 +34,9 @@
                               <div id="sppb-addon-1516037004860" class="clearfix" >
                                 <div class="sppb-addon sppb-addon-text-block 0  ">
                                   <div class="sppb-addon-content"><ul>
-                                    <li><a href="#">Login</a></li>
-                                    <li><a href="#">New account</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="{{ route('login') }}">Login</a></li>
+                                    <li><a href="{{ route('register') }}">Register</a></li>
+                                    <li><a href="{{ route('crypto_contact') }}">Contact</a></li>
                                   </ul>
                                 </div>
                               </div>
@@ -136,8 +134,8 @@
                               <div id="sppb-addon-1516035640165" class="clearfix" >
                                 <div class="sppb-addon sppb-addon-text-block 0 sppb-text-left ">
                                   <div class="sppb-addon-content">
-                                    <strong>Phone</strong>: +1 (234) 567-890<br />
-                                    <strong>Email:</strong> contact@yourmail.com<br /><br />228 Park Ave SNew York, NY 10003-1502US<br /><br />
+                                    <strong>Phone</strong>: Phone Number<br />
+                                    <strong>Email:</strong> contact@yourmail.com<br /><br />Port Harcourt<br /><br />
                                     <a title="Google Map" href="https://www.google.com/maps/place/228+Park+Ave,+New+York,+NY+10017,+USA/@40.7543298,-73.9783973,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258fdf71d54cd:0x824fb82f415fb12f!8m2!3d40.7543258!4d-73.9762086?hl=en" target="_blank" rel="noopener noreferrer">Open In Google Map</a>
                                   </div>
                                 </div>
