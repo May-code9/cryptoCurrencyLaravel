@@ -57,7 +57,7 @@ Services
 						<section id="section-id-1515863141169" class="sppb-section ">
 							<div class="sppb-row-container">
 								<div class="sppb-row">
-									<div class="sppb-col-md-4">
+									<div class="sppb-col-md-4 zoom">
 										<div id="column-id-1515863141216" class="sppb-column" >
 											<div class="sppb-column-addons">
 												<div id="sppb-addon-1515863141217" class="clearfix" >
@@ -71,16 +71,16 @@ Services
 												</div>
 												<div id="sppb-addon-1515863141218" class="clearfix" >
 													<div class="sppb-addon sppb-addon-text-block 0 sppb-text-center bit01">
-														<h3 class="sppb-addon-title">Bitcoin Transaction</h3>
+														<h3 class="sppb-addon-title">Managed Accounts</h3>
 														<div class="sppb-addon-content">
-															<div class="sppb-addon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</div>
+															<div class="sppb-addon-text">Details Details Details Details Details Details Details Details Details Details Details Details </div>
 														</div>
 													</div>
 												</div>
 												<div id="sppb-addon-1515863141178" class="clearfix" >
 													<div class="sppb-empty-space  clearfix"></div>
 												</div>
-												<div id="sppb-addon-1515863141181" class="clearfix" >
+												<!-- <div id="sppb-addon-1515863141181" class="clearfix" >
 													<div class="sppb-addon sppb-addon-single-image sppb-text-center ">
 														<div class="sppb-addon-content">
 															<div class="sppb-addon-single-image-container">
@@ -96,11 +96,11 @@ Services
 															<div class="sppb-addon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</div>
 														</div>
 													</div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
-									<div class="sppb-col-md-4">
+									<div class="sppb-col-md-4 zoom">
 										<div id="column-id-1515863141219" class="sppb-column" >
 											<div class="sppb-column-addons">
 												<div id="sppb-addon-1515863141220" class="clearfix" >
@@ -114,16 +114,16 @@ Services
 												</div>
 												<div id="sppb-addon-1515863141221" class="clearfix" >
 													<div class="sppb-addon sppb-addon-text-block 0 sppb-text-center bit01">
-														<h3 class="sppb-addon-title">Bitcoin Investment</h3>
+														<h3 class="sppb-addon-title">Aggressive growth fund</h3>
 														<div class="sppb-addon-content">
-															<div class="sppb-addon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</div>
+															<div class="sppb-addon-text">Details Details Details Details Details Details Details Details Details Details Details </div>
 														</div>
 													</div>
 												</div>
 												<div id="sppb-addon-1515863141172" class="clearfix" >
 													<div class="sppb-empty-space  clearfix"></div>
 												</div>
-												<div id="sppb-addon-1515863141193" class="clearfix" >
+												<!-- <div id="sppb-addon-1515863141193" class="clearfix" >
 													<div class="sppb-addon sppb-addon-single-image sppb-text-center ">
 														<div class="sppb-addon-content">
 															<div class="sppb-addon-single-image-container">
@@ -139,11 +139,11 @@ Services
 															<div class="sppb-addon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</div>
 														</div>
 													</div>
-												</div>
+												</div>  -->
 											</div>
 										</div>
 									</div>
-									<div class="sppb-col-md-4">
+									<div class="sppb-col-md-4 zoom">
 										<div id="column-id-1515863141222" class="sppb-column" >
 											<div class="sppb-column-addons">
 												<div id="sppb-addon-1515863141223" class="clearfix" >
@@ -157,16 +157,16 @@ Services
 												</div>
 												<div id="sppb-addon-1515863141224" class="clearfix" >
 													<div class="sppb-addon sppb-addon-text-block 0 sppb-text-center bit01">
-														<h3 class="sppb-addon-title">Bitcoin Exchange</h3>
+														<h3 class="sppb-addon-title">Genius investment</h3>
 														<div class="sppb-addon-content">
-															<div class="sppb-addon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</div>
+															<div class="sppb-addon-text">Details Details Details Details Details Details Details Details Details Details Details Details </div>
 														</div>
 													</div>
 												</div>
 												<div id="sppb-addon-1515863141175" class="clearfix" >
 													<div class="sppb-empty-space  clearfix"></div>
 												</div>
-												<div id="sppb-addon-1515863141190" class="clearfix" >
+												<!-- <div id="sppb-addon-1515863141190" class="clearfix" >
 													<div class="sppb-addon sppb-addon-single-image sppb-text-center ">
 														<div class="sppb-addon-content">
 															<div class="sppb-addon-single-image-container">
@@ -182,7 +182,7 @@ Services
 															<div class="sppb-addon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</div>
 														</div>
 													</div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>

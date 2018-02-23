@@ -144,9 +144,9 @@ Home
                                         </div>
                                         <div id="sppb-addon-1515778166922" class="clearfix" >
                                           <div class="sppb-addon sppb-addon-text-block 0 sppb-text-center bit01">
-                                            <h3 class="sppb-addon-title">Bitcoin Exchange</h3>
+                                            <h3 class="sppb-addon-title">Choose Package</h3>
                                             <div class="sppb-addon-content">
-                                              <div class="sppb-addon-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias non nulla placeat, odio, qui dicta alias.</div>
+                                              <div class="sppb-addon-text">Details Details Details Details Details Details Details Details Details Details Details Details Details </div>
                                             </div>
                                           </div>
                                         </div>
