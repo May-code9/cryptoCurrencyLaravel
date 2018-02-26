@@ -18,4 +18,9 @@ Route::get('/Services', ['as'=>'crypto_services', 'uses'=>'CryptoController@serv
 
 Auth::routes();
 
+/* Dashboard Controllers */
+Route::group(['middleware'=>'adminuser'], function() {
+  Route::get('/Dashboard', ['as'=>'cryptoDashboard', 'uses'=>'DashboardController@index']);
+});
+
 //Route::get('/home', 'HomeController@index')->name('home');

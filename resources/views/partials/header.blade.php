@@ -73,6 +73,21 @@
               @guest
               <li class="sp-menu-item @if(isset($login_active)) {{ $login_active }} @endif"><a  href="{{ route('login') }}" >Login</a></li>
               <li class="sp-menu-item @if(isset($register_active)) {{ $register_active }} @endif"><a  href="{{ route('register') }}" >Register</a></li>
+              @elseif(Auth::user()->role > 2)
+              <li class="sp-menu-item sp-has-child"><a  href="#" >{{ Auth::user()->first_name }}</a>
+                <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
+                  <div class="sp-dropdown-inner">
+                    <ul class="sp-dropdown-items">
+                      <li class="sp-menu-item"><a  href="{{ route('cryptoDashboard') }}" >Dashboard</a></li>
+                      <li class="sp-menu-item"><a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                        <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">
+                          {{ csrf_field() }}
+                        </form>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
               @else
               <li class="sp-menu-item sp-has-child"><a  href="#" >{{ Auth::user()->first_name }}</a>
                 <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
