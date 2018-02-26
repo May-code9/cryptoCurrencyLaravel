@@ -14,7 +14,7 @@
         <div class="activity-block success">
           <div class="media">
             <div class="media-body">
-              <h5> <span class="spincreament">---</span></h5>
+              <h5> <span class="spincreament">{{ getSubscribers() }}</span></h5>
               <p>Subscribers</p>
             </div>
             <i class="fa fa-cubes"></i>
@@ -36,7 +36,7 @@
         <div class="activity-block danger">
           <div class="media">
             <div class="media-body">
-              <h5><span class="spincreament">---</span></h5>
+              <h5><span class="spincreament">{{ getSuperAdmin() }}</span></h5>
               <p> SuperAdmin</p>
             </div>
             <i class="fa fa-users"></i>
@@ -58,7 +58,7 @@
         <div class="activity-block warning">
           <div class="media">
             <div class="media-body">
-              <h5><span class="spincreament">---</span></h5>
+              <h5><span class="spincreament">{{ getAdmin() }}</span></h5>
               <p> Admin</p>
             </div>
             <i class="fa fa-eye"></i>

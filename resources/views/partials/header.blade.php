@@ -42,6 +42,7 @@
             <a id="offcanvas-toggler" class="visible-sm visible-xs" aria-label="Menu" href="#"><i class="fa fa-bars" aria-hidden="true" title="Menu"></i></a>
             <ul class="sp-megamenu-parent menu-drop-in hidden-sm hidden-xs">
               <li class="sp-menu-item current-item @if(isset($index)) {{ $index }} @endif"><a  href="{{ route('crypto_home') }}" >Home</a></li>
+              <li class="sp-menu-item"><a  href="{{ route('crypto_home') }}#packages" >Packages</a></li>
               <li class="sp-menu-item @if(isset($about)) {{ $about }} @endif"><a  href="{{ route('crypto_about') }}" >About Us</a></li>
               <li class="sp-menu-item @if(isset($services)) {{ $services }} @endif"><a  href="{{ route('crypto_services') }}" >Services</a></li>
               <!-- <li class="sp-menu-item sp-has-child">

@@ -21,6 +21,7 @@ Auth::routes();
 /* Dashboard Controllers */
 Route::group(['middleware'=>'adminuser'], function() {
   Route::get('/Dashboard', ['as'=>'cryptoDashboard', 'uses'=>'DashboardController@index']);
+  Route::resource('adminusers', 'AdminController');
 });
 
 //Route::get('/home', 'HomeController@index')->name('home');
