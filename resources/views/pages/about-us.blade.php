@@ -16,7 +16,7 @@ About
 							<div class="sp-module-content">
 								<ol class="breadcrumb">
 									<li><i class="fa fa-home"></i></li>
-									<li><a href="/index.php" class="pathway">Home</a></li>
+									<li><a href="{{ route('crypto_home') }}" class="pathway">Home</a></li>
 									<li class="active">About Us</li>
 								</ol>
 							</div>
@@ -36,7 +36,7 @@ About
 						<div class="sp-module-content">
 							<ol class="breadcrumb">
 								<li><i class="fa fa-home"></i></li>
-								<li><a href="/index.php" class="pathway">Home</a></li>
+								<li><a href="{{ route('crypto_home') }}" class="pathway">Home</a></li>
 								<li class="active">About Us</li>
 							</ol>
 						</div>

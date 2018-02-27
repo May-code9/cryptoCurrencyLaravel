@@ -27,7 +27,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = '/Upload Files';
 
     /**
      * Create a new controller instance.
@@ -48,9 +48,18 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
+          'title' => 'required|string|max:25',
           'first_name' => 'required|string|max:255',
           'last_name' => 'required|string|max:255',
-          'phone_number' => 'required|string|max:255',
+          'cell_number' => 'required|string|max:255',
+          'home_number' => 'nullable|string|max:255',
+          'country' => 'required|string|max:255',
+          'date_of_birth' => 'required|date',
+          'occupation' => 'required|string|max:255',
+          'funds' => 'required|string|max:255',
+          'referral_id' => 'nullable|integer|max:255',
+          'address' => 'required|string|max:255',
+          'postal_address' => 'required|string|max:255',
           'email' => 'required|string|email|max:255|unique:users',
           'password' => 'required|string|min:6|confirmed',
         ]);
@@ -65,9 +74,18 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
+          'title' => $data['title'],
           'first_name' => $data['first_name'],
           'last_name' => $data['last_name'],
-          'phone_number' => $data['phone_number'],
+          'cell_number' => $data['cell_number'],
+          'home_number' => $data['home_number'],
+          'country' => $data['country'],
+          'date_of_birth' => $data['date_of_birth'],
+          'occupation' => $data['occupation'],
+          'funds' => $data['funds'],
+          'referral_id' => $data['referral_id'],
+          'address' => $data['address'],
+          'postal_address' => $data['postal_address'],
           'email' => $data['email'],
           'password' => bcrypt($data['password']),
         ]);

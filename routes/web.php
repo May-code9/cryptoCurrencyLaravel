@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('/Upload Files', ['as'=>'crypto_upload_file', 'uses'=>'UploadController@upload']);
 Route::get('/', ['as'=>'crypto_home', 'uses'=>'CryptoController@index']);
 Route::get('/About', ['as'=>'crypto_about', 'uses'=>'CryptoController@about']);
 Route::get('/Contact', ['as'=>'crypto_contact', 'uses'=>'CryptoController@contact']);

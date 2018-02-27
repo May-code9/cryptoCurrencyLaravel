@@ -18,12 +18,12 @@
   @include('partials.links.contact')
   @elseif(Route::currentRouteName() == 'crypto_services')
   @include('partials.links.services')
-  @elseif(Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register')
+  @elseif(Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register' || Route::currentRouteName() == 'crypto_upload_file')
   @include('partials.links.login')
   @endif
   <link rel="stylesheet" href="{{asset('css/may.css')}}" type="text/css">
 </head>
-@if(Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register')
+@if(Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register' || Route::currentRouteName() == 'crypto_upload_file')
 <body class="site com-users view-login no-layout no-task itemid-109 en-gb ltr  sticky-header layout-fluid off-canvas-menu-init">
 @else
 <body class="site com-sppagebuilder view-page no-layout no-task itemid-101 en-gb ltr  sticky-header layout-fluid off-canvas-menu-init">

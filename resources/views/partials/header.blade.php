@@ -30,8 +30,8 @@
         <div class="sp-column ">
           <div class="logo">
             <a href="/">
-              <img class="sp-default-logo hidden-xs" src="images/logo1.png" title="{{ config('app.name') }}" alt="{{ config('app.name') }}">
-              <img class="sp-default-logo visible-xs" src="images/logo1.png" title="{{ config('app.name') }}" alt="{{ config('app.name') }}">
+              <img class="sp-default-logo hidden-xs" src="images/logo.png" title="{{ config('app.name') }}" alt="{{ config('app.name') }}">
+              <img class="sp-default-logo visible-xs" src="images/logo.png" title="{{ config('app.name') }}" alt="{{ config('app.name') }}">
             </a>
           </div>
         </div>
