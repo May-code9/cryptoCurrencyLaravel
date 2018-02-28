@@ -80,6 +80,9 @@
                   <div class="sp-dropdown-inner">
                     <ul class="sp-dropdown-items">
                       <li class="sp-menu-item"><a  href="{{ route('cryptoDashboard') }}" >Dashboard</a></li>
+                      @if($verify == 0)
+                      <li class="sp-menu-item"><a  href="{{ route('Verify.index') }}" >Verify</a></li>
+                      @endif
                       <li class="sp-menu-item"><a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
                         <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">
                           {{ csrf_field() }}
@@ -94,6 +97,9 @@
                 <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
                   <div class="sp-dropdown-inner">
                     <ul class="sp-dropdown-items">
+                      @if($verify == 0)
+                      <li class="sp-menu-item"><a  href="{{ route('Verify.index') }}" >Verify</a></li>
+                      @endif
                       <li class="sp-menu-item"><a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
                         <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">
                           {{ csrf_field() }}

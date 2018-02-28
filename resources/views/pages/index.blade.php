@@ -10,11 +10,23 @@ Home
     </div>
   </div>
 </section>
+
 <section id="sp-main-body">
   <div class="row">
     <div id="sp-component" class="col-sm-12 col-md-12">
       <div class="sp-column ">
         <div id="system-message-container">
+          @if(session('success_status'))
+          <div class = "alert alert-success">
+            {{session('success_status')}}
+          </div>
+          @endif
+
+          @if(session('failure_status'))
+          <div class = "alert alert-danger">
+            {{session('failure_status')}}
+          </div>
+          @endif
         </div>
         <div id="sp-page-builder" class="sp-page-builder  page-1">
           <div class="page-content">

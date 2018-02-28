@@ -27,7 +27,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/Upload Files';
+    protected $redirectTo = '/Verify';
 
     /**
      * Create a new controller instance.

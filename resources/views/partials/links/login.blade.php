@@ -1,3 +1,4 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="templates/bitcoin/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css" />
 <link href="templates/bitcoin/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -31,6 +32,8 @@ h6{font-family:Open Sans, sans-serif; font-weight:600; }
 <script type="application/json" class="joomla-script-options new">{"csrf.token":"60b053c99030ed276ade90003f869626","system.paths":{"root":"","base":""},"system.keepalive":{"interval":840000,"uri":"\/index.php\/component\/ajax\/?format=json"}}</script>
 <script src="media/system/js/core.js?386a1dd61df95d775e65aa2d5cff4150" type="text/javascript"></script>
 <!--[if lt IE 9]><script src="media/system/js/polyfill.event.js?386a1dd61df95d775e65aa2d5cff4150" type="text/javascript"></script><![endif]-->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="media/system/js/keepalive.js?386a1dd61df95d775e65aa2d5cff4150" type="text/javascript"></script>
 <script src="media/jui/js/jquery.min.js?386a1dd61df95d775e65aa2d5cff4150" type="text/javascript"></script>
 <script src="media/jui/js/jquery-noconflict.js?386a1dd61df95d775e65aa2d5cff4150" type="text/javascript"></script>

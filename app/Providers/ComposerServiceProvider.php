@@ -3,25 +3,23 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema;
 use View;
-use Auth;
-use App\Verify;
 
-class AppServiceProvider extends ServiceProvider
+class ComposerServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap any application services.
+     * Bootstrap services.
      *
      * @return void
      */
     public function boot()
     {
-        Schema::defaultStringLength(191);
+        View::composer(['pages.index', 'pages.services',
+        'pages.contact', 'auth.upload', 'pages.about-us'], 'App\Http\ViewComposers\VerifyComposer');
     }
 
     /**
-     * Register any application services.
+     * Register services.
      *
      * @return void
      */
