@@ -156,9 +156,9 @@ Home
                                       </div>
                                       <div id="sppb-addon-1515778166922" class="clearfix" >
                                         <div class="sppb-addon sppb-addon-text-block 0 sppb-text-center bit01">
-                                          <h3 class="sppb-addon-title">Choose Package</h3>
+                                          <h3 class="sppb-addon-title">Verify Account</h3>
                                           <div class="sppb-addon-content">
-                                            <div class="sppb-addon-text">Details Details Details Details Details Details Details Details Details Details Details Details Details </div>
+                                            <div class="sppb-addon-text">Upload a valid Id Card and Proof of Residence. Id Card can be National Id, Drivers License, International Passport or Voters Card</div>
                                           </div>
                                         </div>
                                       </div>

@@ -27,4 +27,19 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function register_authy() {
+    $authy_api = new AuthyApi(getenv('AUTHY_API_KEY'));
+    $user = $authy_api->registerUser($this->email, $this->phone_number, $this->country_code); //email, cellphone, country_code
+
+    if($user->ok()) {
+     $this->authy_id = $user->id();
+     $this->save();
+     return true;
+    } else {
+      // something went wrong
+      return false;
+    }
+  }
+
 }
