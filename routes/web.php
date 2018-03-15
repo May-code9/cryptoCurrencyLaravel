@@ -17,6 +17,13 @@ Route::get('/About', ['as'=>'crypto_about', 'uses'=>'CryptoController@about']);
 Route::get('/Contact', ['as'=>'crypto_contact', 'uses'=>'CryptoController@contact']);
 Route::get('/Services', ['as'=>'crypto_services', 'uses'=>'CryptoController@services']);
 
+//Google2FALaravel
+Route::get('/complete-registration', 'Auth\RegisterController@completeRegistration');
+Route::post('/2fa', function () {
+    return redirect(URL()->previous());
+})->name('2fa')->middleware('2fa');
+
+
 Auth::routes();
 
 /* Dashboard Controllers */

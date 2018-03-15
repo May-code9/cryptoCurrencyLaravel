@@ -15,7 +15,7 @@ class ComposerServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer(['pages.index', 'pages.services',
-        'pages.contact', 'auth.upload', 'pages.about-us'], 'App\Http\ViewComposers\VerifyComposer');
+        'pages.contact', 'auth.upload', 'pages.about-us', 'google2fa.index', 'google2fa.register'], 'App\Http\ViewComposers\VerifyComposer');
     }
 
     /**

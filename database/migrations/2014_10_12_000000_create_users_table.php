@@ -26,7 +26,7 @@ class CreateUsersTable extends Migration
             $table->string('funds');
             $table->integer('referral_id')->nullable();
             $table->string('address');
-            $table->string('postal_address');
+            $table->string('postal_address')->nullable();
             $table->integer('role')->default(0);
             $table->string('email')->unique();
             $table->string('password');

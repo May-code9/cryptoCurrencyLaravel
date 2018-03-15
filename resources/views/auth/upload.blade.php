@@ -45,7 +45,7 @@ Verify Your Account | Registration
 </section>
 
 <section id="sp-breadc">
-  <div class="row bs-wizard col-xs-offset-2" style="border-bottom:0">
+  <div class="row bs-wizard" style="border-bottom:0">
 
     <div class="col-xs-3 bs-wizard-step complete">
       <div class="text-center bs-wizard-stepnum">Step 1</div>
@@ -54,18 +54,25 @@ Verify Your Account | Registration
       <div class="bs-wizard-info text-center darker">Complete Registration Form</div>
     </div>
 
-    <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+    <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
       <div class="text-center bs-wizard-stepnum">Step 2</div>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <a href="#" class="bs-wizard-dot"></a>
+      <div class="bs-wizard-info text-center dark">Google Authentication</div>
+    </div>
+
+    <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+      <div class="text-center bs-wizard-stepnum">Step 3</div>
       <div class="progress"><div class="progress-bar"></div></div>
       <a href="#" class="bs-wizard-dot"></a>
       <div class="bs-wizard-info text-center dark">Upload Id Card and Proof of Residence</div>
     </div>
 
     <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
-      <div class="text-center bs-wizard-stepnum">Step 3</div>
+      <div class="text-center bs-wizard-stepnum">Step 4</div>
       <div class="progress"><div class="progress-bar"></div></div>
       <a href="#" class="bs-wizard-dot"></a>
-      <div class="bs-wizard-info text-center">Select Package</div>
+      <div class="bs-wizard-info text-center">Await Approval</div>
     </div>
   </div>
 </section>

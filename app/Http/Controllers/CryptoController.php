@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class CryptoController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('2fa');
+    }
     public function index() {
       $index = "active";
       return view('pages.index', compact('index'));
@@ -22,4 +26,5 @@ class CryptoController extends Controller
       $services = "active";
       return view('pages.services', compact('services'));
     }
+    
 }

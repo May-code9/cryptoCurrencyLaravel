@@ -43,6 +43,40 @@ Register
     </div>
   </div>
 </section>
+
+<section id="sp-breadc">
+  <div class="row bs-wizard" style="border-bottom:0">
+
+    <div class="col-xs-3 bs-wizard-step active">
+      <div class="text-center bs-wizard-stepnum">Step 1</div>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <a href="#" class="bs-wizard-dot"></a>
+      <div class="bs-wizard-info text-center darker">Complete Registration Form</div>
+    </div>
+
+    <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+      <div class="text-center bs-wizard-stepnum">Step 2</div>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <a href="#" class="bs-wizard-dot"></a>
+      <div class="bs-wizard-info text-center dark">Google Authentication</div>
+    </div>
+
+    <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+      <div class="text-center bs-wizard-stepnum">Step 3</div>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <a href="#" class="bs-wizard-dot"></a>
+      <div class="bs-wizard-info text-center dark">Upload Id Card and Proof of Residence</div>
+    </div>
+
+    <div class="col-xs-3 bs-wizard-step disabled"><!-- complete -->
+      <div class="text-center bs-wizard-stepnum">Step 4</div>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <a href="#" class="bs-wizard-dot"></a>
+      <div class="bs-wizard-info text-center">Await Approval</div>
+    </div>
+  </div>
+</section>
+
 <section id="sp-main-body">
   <div class="container">
     <div class="row">
@@ -207,7 +241,7 @@ Register
                   <div class="col-md-6">
                     <div class="form-group">
                       <div class="group-control">
-                        <input type="text" name="postal_address" id="postal_address" class="{{ $errors->has('postal_address') ? ' is-invalid' : '' }}" value="{{ old('postal_address') }}" placeholder="Postal Address" required/>
+                        <input type="text" name="postal_address" id="postal_address" class="{{ $errors->has('postal_address') ? ' is-invalid' : '' }}" value="{{ old('postal_address') }}" placeholder="Postal Address"/>
                         @if ($errors->has('postal_address'))
                         <span class="invalid-feedback">
                           <strong>{{ $errors->first('postal_address') }}</strong>

@@ -1,6 +1,6 @@
 @extends('master')
 @section('title')
-Login
+Google Authenticator
 @endsection
 @section('content')
 <section id="sp-page-title">
@@ -8,13 +8,13 @@ Login
     <div id="sp-title" class="col-sm-12 col-md-12">
       <div class="sp-column ">
         <div class="sp-page-title"style="background-color: #f7f7f7;">
-          <div class="container"><h2>Login your account</h2><h3>Login Form</h3>
+          <div class="container"><h2>Google </h2><h3>Authenticator</h3>
             <div class="sp-module ">
               <div class="sp-module-content">
                 <ol class="breadcrumb">
                   <li><i class="fa fa-home"></i></li>
                   <li><a href="{{ route('crypto_home') }}" class="pathway">Home</a></li>
-                  <li class="active">Login</li>
+                  <li class="active">Authenticator</li>
                 </ol>
               </div>
             </div>
@@ -24,6 +24,7 @@ Login
     </div>
   </div>
 </section>
+
 <section id="sp-breadc">
   <div class="container">
     <div class="row">
@@ -34,7 +35,7 @@ Login
               <ol class="breadcrumb">
                 <li><i class="fa fa-home"></i></li>
                 <li><a href="{{ route('crypto_home') }}" class="pathway">Home</a></li>
-                <li class="active">Login</li>
+                <li class="active">Authenticator</li>
               </ol>
             </div>
           </div>
@@ -47,14 +48,14 @@ Login
 <section id="sp-breadc">
   <div class="row bs-wizard col-xs-offset-1" style="border-bottom:0">
 
-    <div class="col-xs-5 bs-wizard-step active">
+    <div class="col-xs-5 bs-wizard-step complete">
       <div class="text-center bs-wizard-stepnum">Step 1</div>
       <div class="progress"><div class="progress-bar"></div></div>
       <a href="#" class="bs-wizard-dot"></a>
       <div class="bs-wizard-info text-center darker">Login with Email and Password</div>
     </div>
 
-    <div class="col-xs-5 bs-wizard-step disabled"><!-- complete -->
+    <div class="col-xs-5 bs-wizard-step active"><!-- complete -->
       <div class="text-center bs-wizard-stepnum">Step 2</div>
       <div class="progress"><div class="progress-bar"></div></div>
       <a href="#" class="bs-wizard-dot"></a>
@@ -72,50 +73,31 @@ Login
           </div>
           <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center loginnew">
+              @if(session('error_messages'))
+              <div class = "alert alert-success">
+                {{session('error_messages')}}
+              </div>
+              @endif
               <div class="login">
-                <form method="POST" action="{{ route('login') }}">
+                <form class="form-horizontal" method="POST" action="{{ route('2fa') }}">
                   @csrf
+
                   <div class="form-group">
-                    <div class="group-control">
-                      <input type="email" name="email" id="email" class="{{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ old('email') }}" placeholder="Email" required autofocus/>
-                      @if ($errors->has('email'))
-                      <span class="invalid-feedback">
-                        <strong>{{ $errors->first('email') }}</strong>
-                      </span>
-                      @endif
+                    <label for="one_time_password" class="col-md-4 control-label">One Time Password</label>
+
+                    <div class="col-md-6">
+                      <input id="one_time_password" type="number" class="form-control" name="one_time_password" required autofocus>
                     </div>
                   </div>
+
                   <div class="form-group">
-                    <div class="group-control">
-                      <input type="password" name="password" id="password" placeholder="Password" class="{{ $errors->has('password') ? ' is-invalid' : '' }}" required/>
-                      @if ($errors->has('password'))
-                      <span class="invalid-feedback">
-                        <strong>{{ $errors->first('password') }}</strong>
-                      </span>
-                      @endif
+                    <div class="col-md-6 col-md-offset-4">
+                      <button type="submit" class="btn btn-primary">
+                        Login
+                      </button>
                     </div>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input id="remember" type="checkbox" name="remember" class="inputbox" value="yes">
-                      Remember me
-                    </label>
-                  </div>
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">
-                      Log in
-                    </button>
                   </div>
                 </form>
-              </div>
-              <div class="form-links">
-                <ul>
-                  <li>
-                    <a href="#">
-                      Forgot your password?
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -124,6 +106,7 @@ Login
     </div>
   </div>
 </section>
+
 <section id="sp-bottom">
   <div class="container">
     <div class="row">

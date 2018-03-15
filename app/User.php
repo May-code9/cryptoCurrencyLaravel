@@ -16,7 +16,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'title', 'first_name', 'last_name', 'cell_number', 'home_number', 'country', 'date_of_birth', 'occupation', 'funds', 'referral_id',
-        'address', 'postal_address', 'email', 'password', 'role'
+        'address', 'postal_address', 'email', 'password', 'role', 'google2fa_secret',
     ];
 
     /**
@@ -25,8 +25,18 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'google2fa_secret',
     ];
+
+    public function setGoogle2faSecretAttribute($value)
+    {
+         $this->attributes['google2fa_secret'] = encrypt($value);
+    }
+
+    public function getGoogle2faSecretAttribute($value)
+    {
+        return decrypt($value);
+    }
 
     public function register_authy() {
     $authy_api = new AuthyApi(getenv('AUTHY_API_KEY'));

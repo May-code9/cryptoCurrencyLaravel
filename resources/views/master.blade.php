@@ -18,7 +18,7 @@
   @include('partials.links.contact')
   @elseif(Route::currentRouteName() == 'crypto_services')
   @include('partials.links.services')
-  @elseif(Route::currentRouteName() == 'login' || Route::currentRouteName() == 'register' || Route::currentRouteName() == 'Verify.index')
+  @else
   @include('partials.links.login')
   @endif
   <link rel="stylesheet" href="{{asset('css/may.css')}}" type="text/css">

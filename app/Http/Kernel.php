@@ -59,5 +59,6 @@ class Kernel extends HttpKernel
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'adminuser' => \App\Http\Middleware\AdminUser::class,
+        '2fa' => \PragmaRX\Google2FALaravel\Middleware::class,
     ];
 }
